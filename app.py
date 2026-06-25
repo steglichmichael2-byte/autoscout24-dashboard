@@ -2,7 +2,7 @@ from dash import Dash, html, dcc, dash_table, Input, Output
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv(r'42_Dash\autoscout24.csv')
+df = pd.read_csv('autoscout24.csv')
 df = df.dropna()
 df['year'] = df['year'].astype(int)
 
